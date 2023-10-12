@@ -24,14 +24,17 @@ public class Torre {
         if(torreDestina.numeroDiscos==torreDestina.baseEDiscos.length){
             throw new Exception("A torre destino está cheia");
         }
+
+        //a 1 e 4 podem ser juntas desta forma
+        torreDestina.baseEDiscos[++torreDestina.numeroDiscos]=this.baseEDiscos[this.numeroDiscos];
         // 1
-        torreDestina.baseEDiscos[numeroDiscos+1]=this.baseEDiscos[this.numeroDiscos];
+        //torreDestina.baseEDiscos[torreDestina.numeroDiscos+1]=this.baseEDiscos[this.numeroDiscos];
         // 2
         this.baseEDiscos[numeroDiscos]=0;
         // 3
         this.numeroDiscos--;
         // 4 pode ser feita antes da numero 2 tbm
-        torreDestina.numeroDiscos++;
+        // torreDestina.numeroDiscos++;
     }
 
 }
