@@ -29,7 +29,7 @@ public class Torre {
         if (torreDestina.numeroDiscos == torreDestina.baseEDiscos.length - 1) {
             throw new NoSuchElementException("A torre destino está cheia");
         }
-        if(this.baseEDiscos[this.numeroDiscos]<= torreDestina.baseEDiscos[torreDestina.numeroDiscos]){
+        if(this.baseEDiscos[this.numeroDiscos] >= torreDestina.baseEDiscos[torreDestina.numeroDiscos]){
             throw new IllegalArgumentException("Disco a mover não menor do que o disco do topo da torre de destino");
         }
 
