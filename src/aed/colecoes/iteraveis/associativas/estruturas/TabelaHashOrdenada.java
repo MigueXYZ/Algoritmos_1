@@ -3,6 +3,8 @@ package aed.colecoes.iteraveis.associativas.estruturas;
 import aed.Comparacao;
 import aed.colecoes.iteraveis.IteradorIteravelDuplo;
 import aed.colecoes.iteraveis.associativas.ColecaoIteravelAssociativa;
+import aed.colecoes.iteraveis.associativas.estruturas.Associacao;
+import aed.colecoes.iteraveis.associativas.estruturas.TabelaHashComIncrementoPorHash;
 
 import java.io.Serializable;
 import java.util.NoSuchElementException;

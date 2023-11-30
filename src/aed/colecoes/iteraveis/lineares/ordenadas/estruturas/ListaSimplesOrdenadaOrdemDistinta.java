@@ -1,6 +1,7 @@
 package aed.colecoes.iteraveis.lineares.ordenadas.estruturas;
 
 import aed.Comparacao;
+import aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ListaSimplesOrdenada;
 
 /**
  * @author Actual code:

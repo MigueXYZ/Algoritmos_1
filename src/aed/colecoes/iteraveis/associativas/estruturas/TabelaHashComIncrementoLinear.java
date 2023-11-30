@@ -1,5 +1,7 @@
 package aed.colecoes.iteraveis.associativas.estruturas;
 
+import aed.colecoes.iteraveis.associativas.estruturas.TabelaHash;
+
 /**
  * @author Actual code:
  * Carlos Urbano<carlos.urbano@ipleiria.pt>

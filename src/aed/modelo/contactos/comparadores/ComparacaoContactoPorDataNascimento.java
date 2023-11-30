@@ -8,7 +8,7 @@ public enum ComparacaoContactoPorDataNascimento implements Comparacao<Contacto> 
 
     @Override
     public int comparar(Contacto o1, Contacto o2) {
-        if(o1.getData_nascimento().getAno()>o2.getData_nascimento().getAno()){
+        if(o1.getDataNascimento().getAno()>o2.getDataNascimento().getAno()){
             return 0;
         }
         else{

@@ -1,68 +1,99 @@
 package aed.modelo.contactos;
 
-public class Contacto {
-    private String primeiro_nome;
-    private String ultimo_nome;
-    private long numero_telefone;
-    private String morada;
-    private Data data_nascimento;
+import aed.modelo.contactos.Data;
 
-    public Contacto(String primeiro_nome, String ultimo_nome, long numero_telefone, String morada, Data data_nascimento) {
-        this.primeiro_nome = primeiro_nome;
-        this.ultimo_nome = ultimo_nome;
-        this.numero_telefone = numero_telefone;
+import java.io.Serializable;
+import java.util.Objects;
+
+/**
+ * @author Actual code:
+ * Carlos Urbano<carlos.urbano@ipleiria.pt>
+ * Catarina Reis<catarina.reis@ipleiria.pt>
+ * Marco Ferreira<marco.ferreira@ipleiria.pt>
+ * João Ramos<joao.f.ramos@ipleiria.pt>
+ * Original code: José Magno<jose.magno@ipleiria.pt>
+ */
+public class Contacto implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    private final String primeiroNome;
+    private final String ultimoNome;
+    private final long numeroTelefone;
+    private final String morada;
+    private final Data dataNascimento;
+
+    public Contacto(String primeiroNome, String ultimoNome,
+                    long numeroTelefone, String morada,
+                    Data dataNascimento) {
+        this.primeiroNome = primeiroNome;
+        this.ultimoNome = ultimoNome;
+        this.numeroTelefone = numeroTelefone;
         this.morada = morada;
-        this.data_nascimento = data_nascimento;
+        this.dataNascimento = dataNascimento;
     }
 
-    public Data getData_nascimento() {
-        return data_nascimento;
+    public String getPrimeiroNome() {
+        return primeiroNome;
     }
 
-    public String getPrimeiro_nome() {
-        return primeiro_nome;
+    public String getUltimoNome() {
+        return ultimoNome;
     }
 
-    public String getUltimo_nome() {
-        return ultimo_nome;
-    }
-
-    public long getNumero_telefone() {
-        return numero_telefone;
+    public long getNumeroTelefone() {
+        return numeroTelefone;
     }
 
     public String getMorada() {
         return morada;
     }
 
-    public void setPrimeiro_nome(String primeiro_nome) {
-        this.primeiro_nome = primeiro_nome;
+    public Data getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setUltimo_nome(String ultimo_nome) {
-        this.ultimo_nome = ultimo_nome;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        Contacto contacto = (Contacto) o;
+
+        if (numeroTelefone != contacto.numeroTelefone) {
+            return false;
+        }
+        if (!Objects.equals(primeiroNome, contacto.primeiroNome)) {
+            return false;
+        }
+        if (!Objects.equals(ultimoNome, contacto.ultimoNome)) {
+            return false;
+        }
+        if (!Objects.equals(morada, contacto.morada)) {
+            return false;
+        }
+        return Objects.equals(dataNascimento, contacto.dataNascimento);
     }
 
-    public void setNumero_telefone(long numero_telefone) {
-        this.numero_telefone = numero_telefone;
-    }
-
-    public void setMorada(String morada) {
-        this.morada = morada;
-    }
-
-    public void setData_nascimento(Data data_nascimento) {
-        this.data_nascimento = data_nascimento;
+    @Override
+    public int hashCode() {
+        int result = primeiroNome != null ? primeiroNome.hashCode() : 0;
+        result = 31 * result + (ultimoNome != null ? ultimoNome.hashCode() : 0);
+        result = 31 * result + (int) (numeroTelefone ^ (numeroTelefone >>> 32));
+        result = 31 * result + (morada != null ? morada.hashCode() : 0);
+        result = 31 * result + (dataNascimento != null ? dataNascimento.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
-        return "Contacto{" +
-                "primeiro_nome='" + primeiro_nome + '\'' +
-                ", ultimo_nome='" + ultimo_nome + '\'' +
-                ", numero_telefone=" + numero_telefone +
-                ", morada='" + morada + '\'' +
-                ", data_nascimento=" + data_nascimento +
-                '}';
+        return primeiroNome + " " + ultimoNome +
+                " - Nº: " + numeroTelefone +
+                " - " + dataNascimento +
+                " - " + morada + '\n';
     }
+
 }

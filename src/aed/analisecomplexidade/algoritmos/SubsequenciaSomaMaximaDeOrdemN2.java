@@ -1,5 +1,6 @@
 package aed.analisecomplexidade.algoritmos;
 
+import aed.analisecomplexidade.algoritmos.SubsequenciaSomaMaxima;
 import aed.utils.Par;
 
 /**

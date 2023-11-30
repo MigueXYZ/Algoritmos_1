@@ -1,6 +1,7 @@
 package aed.ordenacao.algoritmos;
 
 import aed.Comparacao;
+import aed.ordenacao.algoritmos.AlgoritmoOrdenacao;
 
 /**
  * @author Actual code:

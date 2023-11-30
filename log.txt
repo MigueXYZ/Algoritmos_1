@@ -1,0 +1,378 @@
+Error on line 271 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:271: error: unmappable character (0x81) for encoding windows-1252
+        sb.append("√?rvore Bin√°ria = {\n");
+                    ^
+Error on line 7 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:7: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Fila;
+                                               ^
+Error on line 8 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:8: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Pilha;
+                                               ^
+Error on line 338 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:338: error: cannot find symbol
+        protected Pilha<No> pilha;
+                  ^
+  symbol:   class Pilha
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorEmProfundidade
+Error on line 523 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:523: error: cannot find symbol
+        protected Fila<No> fila;
+                  ^
+  symbol:   class Fila
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorPorNiveis
+Error on line 4 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:4: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 14 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:14: error: cannot find symbol
+public class Fila<T> implements ColecaoNaoIteravel<T> {
+                                ^
+  symbol: class ColecaoNaoIteravel
+Error on line 3 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:3: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 15 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:15: error: cannot find symbol
+public class Pilha<T> implements ColecaoNaoIteravel<T> {
+                                 ^
+  symbol: class ColecaoNaoIteravel
+Error on line 271 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:271: error: unmappable character (0x81) for encoding windows-1252
+        sb.append("√?rvore Bin√°ria = {\n");
+                    ^
+Error on line 7 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:7: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Fila;
+                                               ^
+Error on line 8 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:8: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Pilha;
+                                               ^
+Error on line 338 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:338: error: cannot find symbol
+        protected Pilha<No> pilha;
+                  ^
+  symbol:   class Pilha
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorEmProfundidade
+Error on line 523 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:523: error: cannot find symbol
+        protected Fila<No> fila;
+                  ^
+  symbol:   class Fila
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorPorNiveis
+Error on line 4 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:4: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 14 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:14: error: cannot find symbol
+public class Fila<T> implements ColecaoNaoIteravel<T> {
+                                ^
+  symbol: class ColecaoNaoIteravel
+Error on line 3 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:3: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 15 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:15: error: cannot find symbol
+public class Pilha<T> implements ColecaoNaoIteravel<T> {
+                                 ^
+  symbol: class ColecaoNaoIteravel
+ClassNotFoundException: aed.modelo.contactos.Data
+Error on line 271 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:271: error: unmappable character (0x81) for encoding windows-1252
+        sb.append("√?rvore Bin√°ria = {\n");
+                    ^
+Error on line 7 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:7: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Fila;
+                                               ^
+Error on line 8 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:8: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Pilha;
+                                               ^
+Error on line 338 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:338: error: cannot find symbol
+        protected Pilha<No> pilha;
+                  ^
+  symbol:   class Pilha
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorEmProfundidade
+Error on line 523 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:523: error: cannot find symbol
+        protected Fila<No> fila;
+                  ^
+  symbol:   class Fila
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorPorNiveis
+Error on line 4 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:4: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 14 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:14: error: cannot find symbol
+public class Fila<T> implements ColecaoNaoIteravel<T> {
+                                ^
+  symbol: class ColecaoNaoIteravel
+Error on line 3 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:3: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 15 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:15: error: cannot find symbol
+public class Pilha<T> implements ColecaoNaoIteravel<T> {
+                                 ^
+  symbol: class ColecaoNaoIteravel
+ClassNotFoundException: aed.modelo.contactos.Data
+Error on line 271 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:271: error: unmappable character (0x81) for encoding windows-1252
+        sb.append("√?rvore Bin√°ria = {\n");
+                    ^
+Error on line 7 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:7: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Fila;
+                                               ^
+Error on line 8 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:8: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Pilha;
+                                               ^
+Error on line 338 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:338: error: cannot find symbol
+        protected Pilha<No> pilha;
+                  ^
+  symbol:   class Pilha
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorEmProfundidade
+Error on line 523 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:523: error: cannot find symbol
+        protected Fila<No> fila;
+                  ^
+  symbol:   class Fila
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorPorNiveis
+Error on line 4 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:4: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 14 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:14: error: cannot find symbol
+public class Fila<T> implements ColecaoNaoIteravel<T> {
+                                ^
+  symbol: class ColecaoNaoIteravel
+Error on line 3 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:3: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 15 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:15: error: cannot find symbol
+public class Pilha<T> implements ColecaoNaoIteravel<T> {
+                                 ^
+  symbol: class ColecaoNaoIteravel
+ClassNotFoundException: aed.modelo.contactos.Data
+Error on line 271 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:271: error: unmappable character (0x81) for encoding windows-1252
+        sb.append("√?rvore Bin√°ria = {\n");
+                    ^
+Error on line 7 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:7: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Fila;
+                                               ^
+Error on line 8 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:8: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Pilha;
+                                               ^
+Error on line 338 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:338: error: cannot find symbol
+        protected Pilha<No> pilha;
+                  ^
+  symbol:   class Pilha
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorEmProfundidade
+Error on line 523 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:523: error: cannot find symbol
+        protected Fila<No> fila;
+                  ^
+  symbol:   class Fila
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorPorNiveis
+Error on line 4 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:4: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 14 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:14: error: cannot find symbol
+public class Fila<T> implements ColecaoNaoIteravel<T> {
+                                ^
+  symbol: class ColecaoNaoIteravel
+Error on line 3 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:3: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 15 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:15: error: cannot find symbol
+public class Pilha<T> implements ColecaoNaoIteravel<T> {
+                                 ^
+  symbol: class ColecaoNaoIteravel
+Error on line 271 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:271: error: unmappable character (0x81) for encoding windows-1252
+        sb.append("√?rvore Bin√°ria = {\n");
+                    ^
+Error on line 7 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:7: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Fila;
+                                               ^
+Error on line 8 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:8: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Pilha;
+                                               ^
+Error on line 338 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:338: error: cannot find symbol
+        protected Pilha<No> pilha;
+                  ^
+  symbol:   class Pilha
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorEmProfundidade
+Error on line 523 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:523: error: cannot find symbol
+        protected Fila<No> fila;
+                  ^
+  symbol:   class Fila
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorPorNiveis
+Error on line 4 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:4: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 14 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:14: error: cannot find symbol
+public class Fila<T> implements ColecaoNaoIteravel<T> {
+                                ^
+  symbol: class ColecaoNaoIteravel
+Error on line 3 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:3: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 15 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:15: error: cannot find symbol
+public class Pilha<T> implements ColecaoNaoIteravel<T> {
+                                 ^
+  symbol: class ColecaoNaoIteravel
+Error on line 271 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:271: error: unmappable character (0x81) for encoding windows-1252
+        sb.append("√?rvore Bin√°ria = {\n");
+                    ^
+Error on line 7 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:7: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Fila;
+                                               ^
+Error on line 8 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:8: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Pilha;
+                                               ^
+Error on line 338 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:338: error: cannot find symbol
+        protected Pilha<No> pilha;
+                  ^
+  symbol:   class Pilha
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorEmProfundidade
+Error on line 523 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:523: error: cannot find symbol
+        protected Fila<No> fila;
+                  ^
+  symbol:   class Fila
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorPorNiveis
+Error on line 4 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:4: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 14 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:14: error: cannot find symbol
+public class Fila<T> implements ColecaoNaoIteravel<T> {
+                                ^
+  symbol: class ColecaoNaoIteravel
+Error on line 3 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:3: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 15 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:15: error: cannot find symbol
+public class Pilha<T> implements ColecaoNaoIteravel<T> {
+                                 ^
+  symbol: class ColecaoNaoIteravel
+Error on line 271 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:271: error: unmappable character (0x81) for encoding windows-1252
+        sb.append("√?rvore Bin√°ria = {\n");
+                    ^
+Error on line 7 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:7: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Fila;
+                                               ^
+Error on line 8 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:8: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Pilha;
+                                               ^
+Error on line 338 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:338: error: cannot find symbol
+        protected Pilha<No> pilha;
+                  ^
+  symbol:   class Pilha
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorEmProfundidade
+Error on line 523 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:523: error: cannot find symbol
+        protected Fila<No> fila;
+                  ^
+  symbol:   class Fila
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorPorNiveis
+Error on line 4 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:4: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 14 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:14: error: cannot find symbol
+public class Fila<T> implements ColecaoNaoIteravel<T> {
+                                ^
+  symbol: class ColecaoNaoIteravel
+Error on line 3 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:3: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 15 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:15: error: cannot find symbol
+public class Pilha<T> implements ColecaoNaoIteravel<T> {
+                                 ^
+  symbol: class ColecaoNaoIteravel
+Error on line 271 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:271: error: unmappable character (0x81) for encoding windows-1252
+        sb.append("√?rvore Bin√°ria = {\n");
+                    ^
+Error on line 7 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:7: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Fila;
+                                               ^
+Error on line 8 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:8: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Pilha;
+                                               ^
+Error on line 338 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:338: error: cannot find symbol
+        protected Pilha<No> pilha;
+                  ^
+  symbol:   class Pilha
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorEmProfundidade
+Error on line 523 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:523: error: cannot find symbol
+        protected Fila<No> fila;
+                  ^
+  symbol:   class Fila
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorPorNiveis
+Error on line 4 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:4: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 14 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:14: error: cannot find symbol
+public class Fila<T> implements ColecaoNaoIteravel<T> {
+                                ^
+  symbol: class ColecaoNaoIteravel
+Error on line 3 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:3: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 15 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:15: error: cannot find symbol
+public class Pilha<T> implements ColecaoNaoIteravel<T> {
+                                 ^
+  symbol: class ColecaoNaoIteravel
+InvalidClassException: aed.modelo.contactos.Data; class invalid for deserialization
+Error on line 271 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:271: error: unmappable character (0x81) for encoding windows-1252
+        sb.append("√?rvore Bin√°ria = {\n");
+                    ^
+Error on line 7 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:7: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Fila;
+                                               ^
+Error on line 8 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:8: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Pilha;
+                                               ^
+Error on line 338 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:338: error: cannot find symbol
+        protected Pilha<No> pilha;
+                  ^
+  symbol:   class Pilha
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorEmProfundidade
+Error on line 523 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:523: error: cannot find symbol
+        protected Fila<No> fila;
+                  ^
+  symbol:   class Fila
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorPorNiveis
+Error on line 4 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:4: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 14 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:14: error: cannot find symbol
+public class Fila<T> implements ColecaoNaoIteravel<T> {
+                                ^
+  symbol: class ColecaoNaoIteravel
+Error on line 3 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:3: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 15 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:15: error: cannot find symbol
+public class Pilha<T> implements ColecaoNaoIteravel<T> {
+                                 ^
+  symbol: class ColecaoNaoIteravel
+Error on line 271 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:271: error: unmappable character (0x81) for encoding windows-1252
+        sb.append("√?rvore Bin√°ria = {\n");
+                    ^
+Error on line 7 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:7: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Fila;
+                                               ^
+Error on line 8 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:8: error: package src.aed.colecoes.naoiteraveis.estruturas does not exist
+import src.aed.colecoes.naoiteraveis.estruturas.Pilha;
+                                               ^
+Error on line 338 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:338: error: cannot find symbol
+        protected Pilha<No> pilha;
+                  ^
+  symbol:   class Pilha
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorEmProfundidade
+Error on line 523 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\estruturas\ArvoreBinaria.java:523: error: cannot find symbol
+        protected Fila<No> fila;
+                  ^
+  symbol:   class Fila
+  location: class aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ArvoreBinaria<T>.IteradorPorNiveis
+Error on line 4 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:4: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 14 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Fila.java:14: error: cannot find symbol
+public class Fila<T> implements ColecaoNaoIteravel<T> {
+                                ^
+  symbol: class ColecaoNaoIteravel
+Error on line 3 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:3: error: package src.aed.colecoes.naoiteraveis does not exist
+import src.aed.colecoes.naoiteraveis.ColecaoNaoIteravel;
+                                    ^
+Error on line 15 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\naoiteraveis\estruturas\Pilha.java:15: error: cannot find symbol
+public class Pilha<T> implements ColecaoNaoIteravel<T> {
+                                 ^
+  symbol: class ColecaoNaoIteravel
+InvalidClassException: aed.modelo.contactos.Data; class invalid for deserialization
+Error on line 10 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\modelo\contactos\GestorContactos.java:10: error: missing method body, or declare abstract
+    public LinkedList<Contacto> getContactosData();
+                                ^
+Error on line -1 in Note: Some input files use unchecked or unsafe operations.
+Error on line -1 in Note: Recompile with -Xlint:unchecked for details.
+Error on line 10 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\modelo\contactos\GestorContactos.java:10: error: missing method body, or declare abstract
+    public LinkedList<Contacto> getContactosData();
+                                ^
+Error on line -1 in Note: Some input files use unchecked or unsafe operations.
+Error on line -1 in Note: Recompile with -Xlint:unchecked for details.

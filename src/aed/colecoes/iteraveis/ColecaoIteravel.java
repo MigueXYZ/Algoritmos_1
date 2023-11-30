@@ -1,6 +1,7 @@
 package aed.colecoes.iteraveis;
 
 import aed.colecoes.Colecao;
+import aed.colecoes.iteraveis.IteradorIteravel;
 
 import java.util.Iterator;
 

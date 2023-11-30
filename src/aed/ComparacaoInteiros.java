@@ -1,5 +1,7 @@
 package aed;
 
+import aed.Comparacao;
+
 /**
  * @author Actual code:
  * Carlos Urbano<carlos.urbano@ipleiria.pt>

@@ -1,5 +1,6 @@
 package aed.analisecomplexidade.algoritmos;
 
+import aed.analisecomplexidade.algoritmos.SubsequenciaSomaMaxima;
 import aed.utils.Par;
 
 /**
@@ -18,8 +19,7 @@ public class SubsequenciaSomaMaximaDeOrdemN extends SubsequenciaSomaMaxima {
         int positivoInicial = getPositivoInicial(elementos);
         int inicio, fim, inicioAtual;
         inicio = fim = inicioAtual = positivoInicial;
-        int positivoFinal = getPositivoFinal(elementos);
-        for (int j = positivoInicial; j <= positivoFinal; j++) {
+        for (int j = positivoInicial; j <= getPositivoFinal(elementos); j++) {
             somaAtual += elementos[j];
             if (somaAtual < 0) {
                 inicioAtual = j + 1;

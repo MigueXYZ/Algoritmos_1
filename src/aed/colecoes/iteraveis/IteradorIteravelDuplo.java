@@ -1,5 +1,7 @@
 package aed.colecoes.iteraveis;
 
+import aed.colecoes.iteraveis.IteradorIteravel;
+
 /**
  * @author Actual code:
  * Carlos Urbano<carlos.urbano@ipleiria.pt>

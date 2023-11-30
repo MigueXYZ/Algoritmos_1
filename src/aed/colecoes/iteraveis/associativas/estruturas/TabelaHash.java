@@ -2,6 +2,7 @@ package aed.colecoes.iteraveis.associativas.estruturas;
 
 import aed.colecoes.iteraveis.IteradorIteravel;
 import aed.colecoes.iteraveis.associativas.ColecaoIteravelAssociativa;
+import aed.colecoes.iteraveis.associativas.estruturas.Associacao;
 
 import java.io.Serializable;
 import java.util.NoSuchElementException;

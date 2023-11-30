@@ -1,5 +1,6 @@
 package aed.analisecomplexidade.algoritmos;
 
+import aed.analisecomplexidade.algoritmos.SubsequenciaSomaMaxima;
 import aed.utils.Par;
 
 /**
@@ -24,7 +25,9 @@ public class SubsequenciaSomaMaximaDeOrdemNLog2N extends SubsequenciaSomaMaxima 
             indicesInicialEFinal.setPrimeiro(esq);
             indicesInicialEFinal.setSegundo(dir);
             inicio = fim = esq;
-            somaMaxima = elementos[esq] > 0 ? elementos[esq] : 0;
+            if (elementos[esq] > 0) {
+                return somaMaxima = elementos[esq];
+            }
             return somaMaxima = 0;
         }
 

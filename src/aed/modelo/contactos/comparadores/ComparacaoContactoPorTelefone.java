@@ -7,6 +7,6 @@ public enum ComparacaoContactoPorTelefone implements Comparacao<Contacto> {
     INSTANCIA;
     @Override
     public int comparar(Contacto t1, Contacto t2) {
-        return -Long.compare(t1.getNumero_telefone(), t2.getNumero_telefone());
+        return -Long.compare(t1.getNumeroTelefone(), t2.getNumeroTelefone());
     }
 }

@@ -1,6 +1,7 @@
 package aed.pesquisa.algoritmos;
 
 import aed.Comparacao;
+import aed.pesquisa.algoritmos.AlgoritmoPesquisa;
 
 /**
  * @author Actual code:
