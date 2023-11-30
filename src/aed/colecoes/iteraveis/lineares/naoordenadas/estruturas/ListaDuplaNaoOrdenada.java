@@ -2,7 +2,9 @@ package aed.colecoes.iteraveis.lineares.naoordenadas.estruturas;
 
 import aed.colecoes.iteraveis.ColecaoIteravel;
 import aed.colecoes.iteraveis.IteradorIteravel;
+import aed.colecoes.iteraveis.IteradorIteravelDuplo;
 import aed.colecoes.iteraveis.lineares.naoordenadas.ColecaoIteravelLinearNaoOrdenada;
+import aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ListaDuplaOrdenada;
 
 import java.io.Serializable;
 import java.util.NoSuchElementException;
@@ -17,208 +19,132 @@ import java.util.NoSuchElementException;
  */
 public class ListaDuplaNaoOrdenada<T> implements ColecaoIteravelLinearNaoOrdenada<T> {
     //bro wtf is the purpose of this??
-    //private static final long serialVersionUID = 1L;
-
+    private static final long serialVersionUID = 1L;
     protected No base;
-    protected No noFinal;
     protected int numeroElementos;
+    private int indice;
 
     public ListaDuplaNaoOrdenada() {
-        noFinal = base = new No();
+        base = new No();
         numeroElementos = 0;
     }
 
-    public ListaDuplaNaoOrdenada(ColecaoIteravel<T> colecao) {
-        this();
-
-        for (T elem : colecao) {
-            noFinal = new No(elem, noFinal);
+    protected No getNo(T elem){
+        No corrente=base.seguinte;
+        while(corrente!=base && !corrente.elemento.equals(elem)){
+            corrente=corrente.seguinte;
         }
+        return corrente;
+    }
 
-        numeroElementos = colecao.getNumeroElementos();
+    protected No getNoPorReferencia(T elem){
+        No corrente=base.seguinte;
+        while(corrente!=base && corrente.elemento!=elem){
+            corrente=corrente.seguinte;
+        }
+        return corrente;
+    }
+
+    protected No getNoPorIndice(int indice){
+        if(indice<0 || indice>=numeroElementos){
+            throw new IndexOutOfBoundsException("Index out of Bounds");
+        }
+        No cor=base;
+        if(indice < numeroElementos/2){
+            cor=base.seguinte;
+            while(indice-- > 0){
+                cor=cor.seguinte;
+            }
+        }else{
+            cor=base.anterior;
+            while(++indice > numeroElementos){
+                cor=cor.anterior;
+            }
+        }
+        return cor;
     }
 
 
-    protected No getNoAnterior(T elem) {
-        No ant = base;
-        while (ant.seguinte != base && !ant.seguinte.elemento.equals(elem)) {
-            ant = ant.seguinte;
-        }
 
-        return ant;
-    }
-
-    protected No getNoAnteriorPorReferencia(T elem) {
-        No ant = base;
-        while (ant.seguinte != base && ant.seguinte.elemento != elem) {
-            ant = ant.seguinte;
-        }
-
-        return ant;
-    }
-
-    protected No getNoAnteriorPorIndice(int indice) {
-        if (indice < 0 || indice >= numeroElementos) {
-            throw new IndexOutOfBoundsException();
-        }
-
-        No ant = base;
-        while (indice-- > 0) {
-            ant = ant.seguinte;
-        }
-
-        return ant;
+    @Override
+    public void inserirNoFim(T elem) {
+        new No(elem,base);
+        numeroElementos++;
     }
 
     @Override
     public void inserirNoInicio(T elem) {
-        new No(elem, base);
-
-        if (++numeroElementos == 1) {
-            noFinal = base.seguinte;
-        }
-    }
-
-    @Override
-    public void inserirNoFim(T elem) {
-        noFinal = new No(elem, noFinal);
+        new No(elem,base.seguinte);
         numeroElementos++;
     }
 
     @Override
     public void inserirPorIndice(int indice, T elem) {
-        if (indice == numeroElementos) {
+        if(indice==numeroElementos){
             inserirNoFim(elem);
-        } else {
-            new No(elem, getNoAnteriorPorIndice(indice));
+        }
+        else{
+            new No(elem,getNoPorIndice(indice));
             numeroElementos++;
         }
     }
 
-    @Override
-    public T removerDoInicio() {
-        if (numeroElementos == 0) {
-            return null;
-        }
-
-        No aux = base.seguinte;
-
-        base.seguinte = aux.seguinte;
-
-        if (--numeroElementos == 0) {
-            noFinal = base;
-        }
-
-        return aux.elemento;
-    }
-
-    @Override
-    public T removerDoFim() {
-        if (numeroElementos == 0) {
-            return null;
-        }
-
-        No ant = getNoAnteriorPorIndice(numeroElementos - 1);
-        No aux = ant.seguinte;
-        ant.seguinte = base;
-        noFinal = ant;
+    private T removerNo(No remover){
+        remover.anterior.seguinte = remover.seguinte;
+        remover.seguinte.anterior = remover.anterior;
         numeroElementos--;
-
-        return aux.elemento;
-    }
-
-    private T removerNoSeguinte(No ant) {
-        No aux = ant.seguinte;
-
-        if (aux == noFinal) {
-            noFinal = ant;
-        }
-
-        ant.seguinte = aux.seguinte;
-        numeroElementos--;
-
-        return aux.elemento;
+        return remover.elemento;
     }
 
     @Override
     public T remover(T elem) {
-        No ant = getNoAnterior(elem);
-
-        return ant.seguinte != base ? removerNoSeguinte(ant) : null;
+        No no = getNo(elem);
+        return no == base ? null : removerNo(no);
     }
-
     @Override
     public T removerPorReferencia(T elem) {
-        No ant = getNoAnteriorPorReferencia(elem);
-
-        return ant.seguinte != base ? removerNoSeguinte(ant) : null;
+        No no = getNoPorReferencia(elem);
+        return no == base ? null : removerNo(no);
     }
-
     @Override
     public T removerPorIndice(int indice) {
-        return removerNoSeguinte(getNoAnteriorPorIndice(indice));
+        No no = getNoPorIndice(indice);
+        return no == base ? null : removerNo(no);
+    }
+    @Override
+    public T removerDoInicio() {
+        return removerNo(base.seguinte);
+    }
+    @Override
+    public T removerDoFim() {
+        return removerNo(base.anterior);
     }
 
-    @Override
-    public T consultarPorIndice(int indice) {
-        return getNoAnteriorPorIndice(indice).seguinte.elemento;
-    }
 
     @Override
     public boolean contem(T elem) {
-        return getNoAnterior(elem).seguinte != base;
+        return getNo(elem) != base;
     }
 
     @Override
     public boolean contemReferencia(T elem) {
-        return getNoAnteriorPorReferencia(elem).seguinte != base;
+        return getNoPorReferencia(elem) != base;
     }
 
     @Override
-    public int getNumeroElementos() {
+    public T consultarPorIndice(int indice){
+        return getNoPorIndice(indice).elemento;
+    }
+
+    @Override
+    public int getNumeroElementos(){
         return numeroElementos;
     }
 
-    @Override
-    public IteradorIteravel<T> iterador() {
-        return new Iterador();
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append("Lista Simples Não Ordenada = {\n");
-        No aux = base.seguinte;
-        while (aux != base) {
-            s.append(aux.elemento).append("\n");
-            aux = aux.seguinte;
-        }
-        s.append("}\n");
-        return s.toString();
-    }
+    public IteradorIteravelDuplo<T> iterador() {return new Iterador();}
 
 
-    public class No implements Serializable {
-        private static final long serialVersionUID = 1L;
-
-        protected T elemento;
-        protected No seguinte;
-
-        // Criação do nó base
-        protected No() {
-            elemento = null;
-            seguinte = this;
-        }
-
-        // Criação de nó com elemento elem e inserção após o nó ant (!= null)
-        protected No(T elem, No ant) {
-            elemento = elem;
-            seguinte = ant.seguinte;
-            ant.seguinte = this;
-        }
-    }
-
-    public class Iterador implements IteradorIteravel<T> {
+    public class Iterador implements IteradorIteravelDuplo<T> {
         protected No corrente;
 
         protected Iterador() {
@@ -235,7 +161,6 @@ public class ListaDuplaNaoOrdenada<T> implements ColecaoIteravelLinearNaoOrdenad
             if (corrente == base) {
                 throw new NoSuchElementException();
             }
-
             return corrente.elemento;
         }
 
@@ -246,12 +171,52 @@ public class ListaDuplaNaoOrdenada<T> implements ColecaoIteravelLinearNaoOrdenad
 
         @Override
         public T avancar() {
-            if (!podeAvancar()) {
+            if(!podeAvancar()){
                 throw new NoSuchElementException();
             }
-
             corrente = corrente.seguinte;
             return corrente.elemento;
         }
+
+        @Override
+        public boolean podeRecuar() {
+            return corrente != base.seguinte;
+        }
+
+        @Override
+        public T recuar() {
+            if(!podeRecuar()){
+                throw new NoSuchElementException();
+            }
+            corrente = corrente.anterior;
+            return corrente.elemento;
+        }
     }
+
+        public class No implements Serializable {
+        //seriously what is the purpose of this shit??
+        private static final long serialVersionUID = 1L;
+
+        protected T elemento;
+        protected No seguinte;
+        protected No anterior;
+
+        // Criação do nó base
+        public No() {
+            elemento = null;
+            seguinte = anterior = this;
+        }
+
+        public No(T elem, No seg) {
+            //criar as conecções deste nó
+            this.elemento=elem;
+            this.anterior=seg.anterior;
+            this.seguinte=seg;
+            //destruir as conecções dos outros nós
+            this.anterior.seguinte=this;
+            seg.anterior=this;
+
+        }
+    }
+
 }
