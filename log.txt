@@ -376,3 +376,12 @@ Error on line 10 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\modelo\contac
                                 ^
 Error on line -1 in Note: Some input files use unchecked or unsafe operations.
 Error on line -1 in Note: Recompile with -Xlint:unchecked for details.
+Error on line 10 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\modelo\contactos\GestorContactosDataNascimento.java:10: error: <identifier> expected
+	public GestorContactosDataNascimento) {
+	                                    ^
+Error on line 18 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\modelo\contactos\GestorContactosDataNascimento.java:18: error: not a statement
+		ret;
+		^
+Error on line 23 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\modelo\contactos\GestorContactosDataNascimento.java:23: error: ';' expected
+		return Objects.has);
+		                  ^
