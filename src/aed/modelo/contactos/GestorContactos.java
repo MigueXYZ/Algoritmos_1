@@ -1,9 +1,12 @@
 package aed.modelo.contactos;
 
 import aed.colecoes.iteraveis.IteradorIteravelDuplo;
+import aed.colecoes.iteraveis.associativas.estruturas.TabelaHashOrdenada;
 import aed.colecoes.iteraveis.lineares.naoordenadas.estruturas.ListaDuplaNaoOrdenada;
 import aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ListaDuplaOrdenada;
 import aed.colecoes.iteraveis.lineares.ordenadas.estruturas.ListaDuplaOrdenadaOrdemDistinta;
+import aed.modelo.contactos.comparadores.ComparacaoContactoPorDataNascimento;
+import aed.modelo.contactos.comparadores.ComparacaoDataAsc;
 import aed.modelo.contactos.comparadores.ComparacaoGestoresContactosDataNascimentoPorDataAsc;
 
 import java.util.NoSuchElementException;
@@ -11,53 +14,52 @@ import java.util.NoSuchElementException;
 public enum GestorContactos {
     INSTANCIA;
 
+    private TabelaHashOrdenada<Data,GestorContactosDataNascimento> contactosPorDataNascimento;
     private static final IteradorIteravelDuplo<Contacto> ITERADOR_DUPLO_COLECAO_VAZIA_CONTACTOS = new ListaDuplaNaoOrdenada<Contacto>().iterador();
 
-    private ListaDuplaOrdenadaOrdemDistinta<GestorContactosDataNascimento> listaGestores;
     GestorContactos(){
-        listaGestores=new ListaDuplaOrdenadaOrdemDistinta<>(ComparacaoGestoresContactosDataNascimentoPorDataAsc.CRITERIO);
+        contactosPorDataNascimento = new TabelaHashOrdenada<Data,GestorContactosDataNascimento>(ComparacaoDataAsc.INSTANCIA,100 );
     }
     public void inserir(Contacto contacto){
-
-        GestorContactosDataNascimento gestor;
-        gestor = listaGestores.consultarDistinto(new GestorContactosDataNascimento(contacto.getDataNascimento()));
-       if(gestor==null) {
-           gestor = new GestorContactosDataNascimento(contacto.getDataNascimento());
-           listaGestores.inserir(gestor);
+        Data dataNascimento=contacto.getDataNascimento();
+        GestorContactosDataNascimento gcdn = contactosPorDataNascimento.consultar(dataNascimento);
+       if(gcdn==null) {
+           gcdn=new GestorContactosDataNascimento(dataNascimento);
+           contactosPorDataNascimento.inserir(dataNascimento,gcdn);
        }
-        gestor.inserir(contacto);
+        gcdn.inserir(contacto);
     }
     public Contacto remover(Contacto contacto){
         GestorContactosDataNascimento gestor;
-        gestor = listaGestores.consultarDistinto(new GestorContactosDataNascimento(contacto.getDataNascimento()));
+        Data dataNascimento = contacto.getDataNascimento();
+        gestor = contactosPorDataNascimento.consultar(dataNascimento);
         if(gestor==null) {
             return null;
         }
         Contacto contactoRemovido = gestor.remover(contacto);
         if(gestor.isVazio()){
-            listaGestores.remover(gestor);
+            contactosPorDataNascimento.remover(dataNascimento);
         }
         return contactoRemovido;
     }
     public IteradorIteravelDuplo<Contacto> remover(Data data){
         GestorContactosDataNascimento gestor = new GestorContactosDataNascimento(data);
-        gestor=listaGestores.remover(gestor);
+        gestor=contactosPorDataNascimento.remover(data);
         return gestor == null ?  ITERADOR_DUPLO_COLECAO_VAZIA_CONTACTOS : gestor.iterador();
     }
     public IteradorIteravelDuplo<Contacto> consultar(Data data){
         GestorContactosDataNascimento gestor;
-        gestor = listaGestores.consultarDistinto(new GestorContactosDataNascimento(data));
+        gestor = contactosPorDataNascimento.consultar(data);
         return gestor == null ?  ITERADOR_DUPLO_COLECAO_VAZIA_CONTACTOS : gestor.iterador();
     }
     public IteradorIteravelDuplo<Contacto> consultar(Data dataInicio,Data dataFim){
         return new Iterador(dataInicio,dataFim);
     }
     private class Iterador implements IteradorIteravelDuplo<Contacto>{
-        private IteradorIteravelDuplo<GestorContactosDataNascimento> iteradorGestores;
+        private final IteradorIteravelDuplo<GestorContactosDataNascimento> iteradorGestores;
         private IteradorIteravelDuplo<Contacto> iteradorContactos;
         public Iterador(Data dataInicio, Data dataFim){
-            iteradorGestores=listaGestores.consultar(new GestorContactosDataNascimento(dataInicio),new GestorContactosDataNascimento(dataFim));
-
+            iteradorGestores=contactosPorDataNascimento.consultarValores(dataInicio,dataFim);
             reiniciar();
         }
         @Override
@@ -71,10 +73,7 @@ public enum GestorContactos {
         }
         @Override
         public boolean podeAvancar() {
-            if(iteradorGestores.podeAvancar() ||  iteradorContactos.podeAvancar()){
-                return true;
-            }
-            return false;
+            return iteradorGestores.podeAvancar() || iteradorContactos.podeAvancar();
         }
         @Override
         public Contacto avancar() {
@@ -86,10 +85,7 @@ public enum GestorContactos {
         }
         @Override
         public boolean podeRecuar() {
-            if(iteradorGestores.podeRecuar() ||  iteradorContactos.podeRecuar()){
-                return true;
-            }
-            return false;
+            return iteradorGestores.podeRecuar() || iteradorContactos.podeRecuar();
         }
         @Override
         public Contacto recuar() {
