@@ -385,3 +385,108 @@ Error on line 18 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\modelo\contac
 Error on line 23 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\modelo\contactos\GestorContactosDataNascimento.java:23: error: ';' expected
 		return Objects.has);
 		                  ^
+Error on line 22 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:22: error: package GestorContactos does not exist
+            GestorContactos.INSTANCIA.inserir(contacto);
+                           ^
+Error on line 27 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:27: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data1)) {
+                                                ^
+Error on line 33 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:33: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data1, data2)) {
+                                                ^
+Error on line 39 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:39: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data3)) {
+                                                ^
+Error on line 45 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:45: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data3, data4)) {
+                                                ^
+Error on line 51 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:51: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data5, data2)) {
+                                                ^
+Error on line 55 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:55: error: package GestorContactos does not exist
+        GestorContactos.INSTANCIA.remover(data1);
+                       ^
+Error on line 57 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:57: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data1)) {
+                                                ^
+Error on line 63 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:63: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(contactoARemover.getDataNascimento())) {
+                                                ^
+Error on line 67 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:67: error: package GestorContactos does not exist
+        GestorContactos.INSTANCIA.remover(contactoARemover);
+                       ^
+Error on line 69 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:69: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(contactoARemover.getDataNascimento())) {
+                                                ^
+Error on line -1 in Note: Some input files use unchecked or unsafe operations.
+Error on line -1 in Note: Recompile with -Xlint:unchecked for details.
+Error on line 22 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:22: error: package GestorContactos does not exist
+            GestorContactos.INSTANCIA.inserir(contacto);
+                           ^
+Error on line 27 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:27: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data1)) {
+                                                ^
+Error on line 33 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:33: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data1, data2)) {
+                                                ^
+Error on line 39 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:39: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data3)) {
+                                                ^
+Error on line 45 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:45: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data3, data4)) {
+                                                ^
+Error on line 51 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:51: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data5, data2)) {
+                                                ^
+Error on line 55 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:55: error: package GestorContactos does not exist
+        GestorContactos.INSTANCIA.remover(data1);
+                       ^
+Error on line 57 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:57: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data1)) {
+                                                ^
+Error on line 63 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:63: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(contactoARemover.getDataNascimento())) {
+                                                ^
+Error on line 67 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:67: error: package GestorContactos does not exist
+        GestorContactos.INSTANCIA.remover(contactoARemover);
+                       ^
+Error on line 69 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:69: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(contactoARemover.getDataNascimento())) {
+                                                ^
+Error on line -1 in Note: Some input files use unchecked or unsafe operations.
+Error on line -1 in Note: Recompile with -Xlint:unchecked for details.
+Error on line 22 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:22: error: package GestorContactos does not exist
+            GestorContactos.INSTANCIA.inserir(contacto);
+                           ^
+Error on line 27 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:27: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data1)) {
+                                                ^
+Error on line 33 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:33: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data1, data2)) {
+                                                ^
+Error on line 39 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:39: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data3)) {
+                                                ^
+Error on line 45 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:45: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data3, data4)) {
+                                                ^
+Error on line 51 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:51: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data5, data2)) {
+                                                ^
+Error on line 55 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:55: error: package GestorContactos does not exist
+        GestorContactos.INSTANCIA.remover(data1);
+                       ^
+Error on line 57 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:57: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(data1)) {
+                                                ^
+Error on line 63 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:63: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(contactoARemover.getDataNascimento())) {
+                                                ^
+Error on line 67 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:67: error: package GestorContactos does not exist
+        GestorContactos.INSTANCIA.remover(contactoARemover);
+                       ^
+Error on line 69 in C:\Users\migue\IdeaProjects\Algoritmos\src\aed\colecoes\iteraveis\lineares\ordenadas\utilizacao\MainPraticaGestorContactos.java:69: error: package GestorContactos does not exist
+        for (Contacto contacto : GestorContactos.INSTANCIA.consultar(contactoARemover.getDataNascimento())) {
+                                                ^
+Error on line -1 in Note: Some input files use unchecked or unsafe operations.
+Error on line -1 in Note: Recompile with -Xlint:unchecked for details.
